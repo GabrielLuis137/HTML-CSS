@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: rgba(79, 238, 79, 0.61);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabeca{
+    background-color:rgba(4, 95, 4, 0.747) ;
+    color: white;  
+    padding: 10px;   
+    margin: -10px;   
+}
+.titulo1{
+    text-align: center;
+    
+}
+.titulo{
+    text-align: center;
+}
+nav > a{
+    color: white;
+    text-align: justify;
+}
+
+
+#meio{
+    background-color: white;
+    text-align: center;
+    padding: 28px;
+    margin: 10px 71px 10px 71px;
+}
+
+#video{
+    background-color:rgba(4, 95, 4, 0.747) ;
+    padding: 1px;
+    margin: 5px -28px 5px -28px;
+
+   
+}
+
+#artigo{
+    background-color:rgba(4, 95, 4, 0.747)  ;
+    margin: 5px -10px 5px -10px;
+    border-radius: 3% ;
+}
+#aprender{
+    background-color:  rgba(79, 238, 79, 0.61);
+    text-align: left;
+   
+    border-radius: 25% 25% 0% 0% ;
+
+
+
+
+
+}
+
+.lista {
+    
+    column-count: 2; 
+    column-gap: 1em;
+}
+
+ul{
+ 
+    list-style: none;
+  
+   
+    
+}
+li::before{
+    display: flex;    
+    text-align: justify;
+    content: "\2713";
+   
+}

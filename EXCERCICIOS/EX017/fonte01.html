@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            font-family:'work sans', Arial, Helvetica, sans-serif;
+            
+            /*medidas absolutas
+            cm,mm,in,px,pt,pc
+            
+            medidas relativas
+            em, ex, rem, vw, vh, %  
+            
+            16px geralmente e = 1em usar sempre que der o EM pois e o tamanho recomendado.
+            */
+            
+            font-size: 1em ;
+            font-weight:bolder ;
+            font-style: italic;
+            text-decoration: underline;
+            /*lighter normal bold bolder*/
+        }
+        h1{
+           /* font-family: 'Work Sans',sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+            /*shorthand font
+            aqui e a ordem de como usar todas as fontes em apenas uma linha.
+            -font-style ->font-weight ->font-size -> font-family            
+            */
+            font: italic bolder 4em 'work sans', sans-serif;
+
+
+        }
+        h2{
+
+            font: italic bold 3em 'Work Sans', sans-serif;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com Fontes</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia magnam necessitatibus voluptatibus delectus ullam porro dolore dolorem? Accusantium dolor quae unde distinctio totam ea obcaecati ipsa amet nemo, animi voluptates.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, reprehenderit explicabo? Perspiciatis earum quasi consequuntur laboriosam est. Illum, aut porro earum animi beatae, incidunt pariatur aliquam commodi magni tenetur saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo magnam molestias rem ipsam quibusdam, error vitae impedit voluptates, eligendi corrupti repudiandae cum aut, ullam repellendus saepe. Eos voluptas cumque est!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit doloremque dolorem libero dolore vel id repellendus eligendi voluptatem quaerat aperiam corrupti sequi et, dolores, impedit officiis repellat veniam molestias ut?</p>
+        <h2>Subtiulo do exercicio</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto repellendus animi error qui itaque obcaecati quibusdam esse magnam expedita libero velit veritatis inventore, est quisquam labore, quo, voluptates assumenda!</p>
+    </main>
+</body>
+</html>
