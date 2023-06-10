@@ -84,6 +84,12 @@ section.imagem{
     background-attachment: fixed;
 
 }
+section.imagem > p {
+    display: inline-block; /*o display inline-block faz uma caixa que segue o que tem dentro*/
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.39);
+    text-shadow: 2px 2px 0 px black;
+}
 
 section#img01{
     background-image: url(imagens/background001.jpg);
@@ -94,15 +100,7 @@ section#img01{
 section#img02{
     background-image: url(imagens/background002.jpg);
     
-
-section.imagem > p{
-    display: inline-block; /*o display inline-block faz uma caixa que segue o que tem dentro*/
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.39);
-    text-shadow: 2px 2px 0 px black;
 }
-
-
 
 footer{
     background-color: black;
