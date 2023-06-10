@@ -1,8 +1,24 @@
 @charset 'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Passion+One&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+
+:root {
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Kaushan Script', cursive;
+    
+
+
+
+}
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em; /*1em e o padrao das fontes colocar ou nao,nao vai mudar muita coisa.*/
 }
 
 
@@ -10,6 +26,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte1);
 
 
 }
@@ -23,6 +40,10 @@ header>h1{
     padding-top: 50px;
    /* text-transform: uppercase; aqui coloca todas as fontes maiusculas*/
    font-variant: small-caps;/*aqui tambem mas as letras iniciais ficam destacadas.*/
+   font-family: var(--fonte2);
+    font-size: 10vw;/*aqui sao 10% da view port, o tamanho da letra, isso faz com que o tamanho da letra vai mudando dependendo do tamanho da tela*/
+
+
 }
 header > p{
     padding-bottom: 50px;
@@ -42,6 +63,8 @@ section{
     padding-top: 10vh;
     line-height: 2em;
     padding-left: 30px ;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 
@@ -57,7 +80,8 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    display: inline-block; /*o display inline-block faz uma caixa que segue o que tem dentro*/
+    padding: 29px;
     background-color: aqua;
 }
 
