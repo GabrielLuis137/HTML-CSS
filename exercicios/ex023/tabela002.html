@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
 
         }
 
@@ -30,6 +31,13 @@
         thead{
             background-color: gray;
             color: wheat;
+        }
+        thead > tr > th{
+            position: sticky; /*isso e para colar uma parte na parte de cima do site.*/
+            top: -1px;
+            background-color: gray ;
+
+
         }
         
         td.num {
