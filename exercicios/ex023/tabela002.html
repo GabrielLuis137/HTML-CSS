@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela002</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightcoral;
+        }
+
+        thead{
+            background-color: gray;
+            color: wheat;
+        }
+        
+        td.num {
+            text-align: right;
+        }
+        .pop{
+            width: 50px;
+        }
+      
+        .tot{
+            width: 25px;
+        }
+      
+        tbody > tr:nth-child(even)/*nth-child(2n) e para pular de 2 em 2 se colocar 5 em 5 muda tambem
+        podemos usar odd 2n-1 e even 2n para impar e par.*/{
+            background-color: lightgray;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>uso de tabelas grandes</h1>
+<!-- hierarquia de tabaelas (simples)
+     table = tabela
+         table row = linha de tabela 
+                 table header= cabecalho de tabela
+                 table data = dado de tabela
+ 
+     tr = linha 
+     td = pode ser lido como colunas usar como os DADOS 
+     th = pode ser llido como os titulos da tabela   
+     
+    anatomia para tabelas grandes
+
+     table
+        caption // nome da tabela
+        thead // titulos para a tabela
+            tr,td,th
+        tbody // conteudo da tabela
+            tr,td,th
+        tfoot // final da tabela geralmente resultado.
+            tr, td, th
+
+
+    scope='coluna' ou 'linha' usado para mostrar os titulos 
+
+
+    -->                       
+
+    <table>
+        <caption>Populacao das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" class="est">Estado</th>
+                <th scope="col" class="pop">populacao</th>
+                <th scope="col" class="tot">% da pop. total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">45 919 049</td>
+                <td class="num">21,9%</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21 168 791</td> 
+                <td class="num">10,1%</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">17 264 943</td>
+                <td class="num">9%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>parana</td>
+                <td class="num">14 873 064</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">14 873 064</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>pernambuco</td>
+                <td class="num">9 557 071</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>ceara</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>para</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr> 
+            <tr>
+                <td>Santa catarina</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>maranhao</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>goias</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>amazonas</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>Rio grande do Norte</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num"> 9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do sul</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>sergipe</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>randonia</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>tocantins</td>
+                <td class="num">9 557 07</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>acre</td>
+                <td class="num">881 935</td>
+                <td class="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>amapa</td>
+                <td class="num">881 935</td>
+                <td class ="num">7.1%</td>
+            </tr>
+            <tr>
+                <td>roraima</td>
+                <td class="num">881 935</td>
+                <td class="num">7.1%</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td><strong>210.147.125</strong></td>
+                <td>100%</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+    
+</body>
+</html>
